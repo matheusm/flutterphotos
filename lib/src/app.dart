@@ -35,7 +35,14 @@ class _AppState extends State<App> {
           onPressed: fetchImage,
         ),
         appBar: AppBar(
-          title: Text('Lets see some images!'),
+          title: Text('Instagram', style: TextStyle(color: Colors.black87),),
+          leading: Builder(builder: (BuildContext context){
+            return IconButton(
+              onPressed: (){},
+              icon: Icon(Icons.camera_alt,color: Colors.black87,),
+            );
+          },),
+          backgroundColor: Colors.white,
         ),
       ),
     );
